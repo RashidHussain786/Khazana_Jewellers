@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Jewelry Store Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This web application for the Jewelry Store ensures a secure and user-friendly experience for customers. Users are required to log in with their credentials, and only authenticated users can access certain features. Admins have additional privileges to manage products and view order history from a separate dashboard. User passwords are encrypted for security, and the application gracefully handles errors. The design is responsive, allowing access from various devices.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Database](#database)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- User Registration and Login: Users can create an account and log in to access their profile and make purchases.
+- Jewelry Collection: Users can browse and view a wide range of jewelry items.
+- Search and Filter: Users can search for specific jewelry items and apply filters to refine their search.
+- Shopping Cart: Users can add items to their shopping cart and proceed to checkout.
+- Secure Payment: The application does not include a payment gateway but can be easily integrated with one.
+- User Profile: Users can view and manage their profile information and order history.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To set up the project locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository: `git clone https://github.com/RashidHussain786/Khazana_Jewellers.git`
+2. Navigate to the project directory: `cd jewelry`
+3. Install the dependencies for the front end: `npm install`
+4. Install the .NET Core SDK from https://dotnet.microsoft.com/download
+5. Navigate to the backend directory: `cd backend`
+6. Install the NuGet packages: `dotnet restore `
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Start the development server for the front end: `npm start `
+2. Start the backend server: `dotnet run `
+3. Open your web browser and go to: `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+The project uses the following technologies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Front-end: React.js, Material-UI
+- Backend: .NET Core Web API, Microsoft SQL Server (Code First Approach)
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Database
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application uses Microsoft SQL Server for data storage. The database and its tables will be automatically created using the Code First approach when you run the application for the first time. The connection string can be configured in the `appsettings.json` file.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
